@@ -229,6 +229,19 @@ section ul {
     content: '♣  ';
     color: #574936; }
 
+.hilite {
+  padding: .5em;
+  background-color: #9DABA3;
+  border-radius: 0.25em;
+  text-align: center;
+  border: 1px solid #50644A;
+}
+/*margin: 0 0 0.5em;
+padding: 0.5em 1em;
+text-align: center;
+background-color: #9DABA3;
+border-radius: 0.25em; } */
+
 /* ============
  * WORKING MESS */
 /*a[href^="http"]:after {
