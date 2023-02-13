@@ -19,7 +19,8 @@ main {
 section {
   width: 100%;
   padding: 2em 0.5em;
-  clear: both; }
+  clear: both;
+  position: relative; }
   section h2 {
     max-width: 800px;
     margin: -2.5em auto 0;
@@ -40,18 +41,20 @@ section:nth-of-type(even) {
 section:nth-of-type(odd) {
   background-color: #e6e6e6; }
 
+
 /* BITS */
 .button {
   margin: 0.25em;
   padding: 0.25em 0.5em;
-  color: #af6e15;
   font-size: 1.1em;
   line-height: 2em;
+  color: #fff;
   text-decoration: none;
-  background-color: #ccc; }
+  background-color: #e8a242;  }
   .button:hover {
     color: #fff;
-    background-color: #e8a242; }
+    background-color: #af6e15;
+  }
 
 .center {
   text-align: center; }
@@ -84,8 +87,23 @@ h2 {
   h2 small {
     font-size: 1rem; }
 
-:target:not(#top) {
+h2:target:not(#top) {
   color: #394734; }
+
+h2:target::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0; top:0; height: 100%;
+  border: 5px solid #e8a242;
+}
+h2:target::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0; top:0; height: 100%;
+  border: 5px solid #e8a242;
+}
 
 /* ============
  * HEADER & NAV */
