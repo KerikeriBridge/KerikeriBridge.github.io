@@ -27,8 +27,8 @@ section {
     padding: 4.8rem 0 0.5em; }
   @media only screen and (max-width: 760px) {
     section h2 {
-      margin-top: -3.5em;
-      padding-top: 7.2rem; } }
+      margin-top: 0;
+      padding-top: 0; } }
   section p, section ul, section div {
     max-width: 800px;
     margin-left: auto;
@@ -95,14 +95,14 @@ h2:target::before {
   position: absolute;
   display: block;
   left: 0; top:0; height: 100%;
-  border: 5px solid #e8a242;
+  border: 3px solid #e8a242;
 }
 h2:target::after {
   content: "";
   position: absolute;
   display: block;
   right: 0; top:0; height: 100%;
-  border: 5px solid #e8a242;
+  border: 3px solid #e8a242;
 }
 
 /* ============
@@ -180,7 +180,10 @@ nav {
     nav a:hover {
       color: #e8a242;
       background-color: rgba(255, 255, 255, 0.4); }
-
+  @media only screen and (max-width: 760px) {
+    nav {
+      position: relative; }
+    }
 /* ============
  * SPECIFICS */
 .map {
