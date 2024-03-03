@@ -48,7 +48,7 @@ section:nth-of-type(odd) {
   padding: 0.25em 0.5em;
   font-size: 1.1em;
   line-height: 2em;
-  color: #fff;
+  color: #333;
   text-decoration: none;
   background-color: #e8a242;  }
   .button:hover {
@@ -224,8 +224,20 @@ nav {
     margin: 0 0 0.5em;
     padding: 0.5em 1em;
     text-align: center;
-    background-color: #9DABA3;
+    /*background-color: #9DABA3;*/
+    background-color: #e8a242;
     border-radius: 0.25em; }
+  .sponsorlist a li:hover {
+    background-color: #af6e15;
+    color: #fff;
+  } 
+.sponsorlist a {
+  color: #333;
+  text-decoration: none;
+}
+.sponsorlist a:hover {
+  background-color: transparent;
+}
 
 /* LISTS */
 section ul {
